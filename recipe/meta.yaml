@@ -1,13 +1,13 @@
 {% set name = "conch-sounds" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name.replace('-', '_') }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6627628b16491f19a602bd3f2a30312b2b52e710e1fe6a80829782e9119e497c
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name.replace('-', '_') }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e38f2c8de77aceea5ba94fde0f53427c4d822341f829ed11e28bb63f1c1ac5ba
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
